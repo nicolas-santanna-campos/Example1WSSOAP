@@ -12,16 +12,16 @@ public class CalculatorClient {
 		QName qname = new QName("http://calc/", "CalculatorServerImplService");
 		
 		Service ws = Service.create(url, qname);
-		CalculatorServer calculadora = ws.getPort(CalculatorServer.class);
+		CalculatorServer calculator = ws.getPort(CalculatorServer.class);
 		
-		System.out.println("Somando (12+3): " + calculadora.soma(12, 3));
-		System.out.println("Subtraindo (12-3): " + calculadora.subtrai(12, 3));
-		System.out.println("Multiplicando (12*3): " + calculadora.multiplica(12, 3));
-		System.out.println("Dividindo (12/3): " + calculadora.divide(12, 3));
+		System.out.println("Somando (12+3): " + calculator.sum(12, 3));
+		System.out.println("Subtraindo (12-3): " + calculator.subtract(12, 3));
+		System.out.println("Multiplicando (12*3): " + calculator.multiplies(12, 3));
+		System.out.println("Dividindo (12/3): " + calculator.divide(12, 3));
 	}
 }
 
 /*Exec prompt 2: 
-	javac calc/CalculadoraClient.java
-	java calc.CalculadoraClient
+	javac calc/CalculatorClient.java
+	java calc.CalculatorClient
 */

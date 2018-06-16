@@ -10,8 +10,8 @@ public class CalculatorServerPublisher {
 }
 
 /*Exec prompt 1: 
-	javac calc/CalculadoraServerPublisher.java
-	java calc.CalculadoraServerPublisher
+	javac calc/CalculatorServerPublisher.java
+	java calc.CalculatorServerPublisher
 
 Access:
 	http://127.0.0.1:9876/calc?wsdl

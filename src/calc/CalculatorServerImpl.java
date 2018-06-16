@@ -6,17 +6,17 @@ import javax.jws.WebService;
 public class CalculatorServerImpl implements CalculatorServer {
 
 	@Override
-	public float soma(float num1, float num2) {
+	public float sum(float num1, float num2) {
 		return num1 + num2;
 	}
 
 	@Override
-	public float subtrai(float num1, float num2) {
+	public float subtract(float num1, float num2) {
 		return num1 - num2;
 	}
 
 	@Override
-	public float multiplica(float num1, float num2) {
+	public float multiplies(float num1, float num2) {
 	return num1 * num2;
 	}
 

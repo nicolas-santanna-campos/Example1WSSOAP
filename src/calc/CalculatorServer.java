@@ -8,8 +8,8 @@ import javax.jws.soap.SOAPBinding.Style;
 @WebService
 @SOAPBinding(style = Style.RPC)
 public interface CalculatorServer {
-	@WebMethod float soma(float num1, float num2);
-	@WebMethod float subtrai(float num1, float num2);
-	@WebMethod float multiplica(float num1, float num2);
+	@WebMethod float sum(float num1, float num2);
+	@WebMethod float subtract(float num1, float num2);
+	@WebMethod float multiplies(float num1, float num2);
 	@WebMethod float divide(float num1, float num2);
 }
